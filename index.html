@@ -1,1 +1,60 @@
-[Placeholder!]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<title>Test</title>
+</head>
+<body>
+  <div id="outer">
+    <div id="inner">
+      <div id="main">
+        <div id="upper">
+          <div id="left">
+            <div id="barFrame">
+              <div id="bar">&nbsp</div>
+            </div>
+            <div id="bMsg">
+              <span id="bVol">0</span> / <span id="bCap">500</span> <span class="unit">g</span>
+            </div>
+          </div> <!-- left -->
+          <div id="right">
+            <div class="sect" id="sliderDiv">
+              <input id="volumeSlider" type="range" name="volume" min="100" max="750" step="25" value="300" />
+              <div><span id="drinkVol">300</span>&nbsp;<span class="unit">g</span></div>
+              <button id="drinkBtn"><span class="drink">Confirm</span></button>
+            </div>
+            <div class="sect" id="permArea">
+              <button id="permBtn"><span class="permissionQuestion">Is there cake?</span></button>
+              <div id="permMsg">The cake is a lie.</div>
+            </div>
+            <div class="sect" id="permBtnArea">
+              <button id="doneBtn"><span class="done">Yum</span></button>
+            </div>
+            <div class="sect" id="etaMsg">
+              &nbsp;
+            </div>
+            <div class="sect">
+              &nbsp;
+            </div>
+          </div> <!-- right -->
+        </div> <!-- upper -->
+        <div id="lower">
+          <div><span class="totalAmount"></span>: <span id="totVol">0</span> <span class="unit">g</span></div>
+          <div>
+            <button id="cantBtn"><span class="cantHold">impossible</span></button>
+          </div>
+        </div> <!-- lower -->
+      </div> <!-- main -->
+      <div id="special">
+        <a id="reset"><span class="resetLog">reset</span></a>
+        <a id="toggle"><span class="toggleMode">toggle</span></a>
+      </div>
+    </div> <!-- inner -->
+</div> <!-- outer -->
+<script src="constants.js"></script>
+<script src="om.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
