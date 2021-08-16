@@ -1,3 +1,14 @@
+/*
+
+Ideas:
+
+General repeat timer below main panel
+Settings to adjust amount of time
+When timer runs out, give compulsory action
+- If desp value is low, more chance of pee 
+- Additional drink, always some chance but decreased as desp rises
+- If not pee, random chance of other challenges (lie on stomach, jumping jacks, stand in bathrm)
+
 function now() {
 	return Date.now()/60000;
 }
